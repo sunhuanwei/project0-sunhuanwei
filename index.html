@@ -2,15 +2,53 @@
 <html>
 	<head>
 			<title>My Webpage(index.com)</title>
+            <link rel="stylesheet" type="text/css" href="theme.css">
+            <style >
+                #para1{
+                    text-align: center;
+                    color: red
+                }
+                .value{
+                    text-align: center 
+                    color:green
+                }
+                a:hover{
+                    background: black
+                }
+                a:link{
+                    background: blue
+                }
+                a:visited{
+                    background: lightblue
+                }
+                #Border{
+                    border-style: solid;
+                    border-bottom: thick dotted #ff0000;
+                }
+                #border-bottom-width {
+                    border-style: solid;
+                    border-bottom-width: 15px;
 
+                }
+                #Border-bottom-double{
+                    border-style: solid;
+                    border-bottom-style: double;
+                }
+                @media screen{
+                    p.text{font-family: verdana,sans-serif;font-size:14px;}
+                }
+                @media print{
+                    p.text{font-family: times,sans-serif;font-size: 10px}
+                }
+                @media screen,print{
+                    p.text{font-weight: bold;}
+                }
+            </style>
     <head>
-            <title>My Webpage(index.com)</title>
-
-    </head>
         <body>
-            <h1> 这是第一个标题</h1>
-            <h2>这是第二个标题</h2>
-            <h3>这是第三个标题</h3>
+            <h1 id="para1">调用ID选择器</h1>
+            <h2 class="value">调用Class选择器</h2>
+            <h3 id="Border">治理用了BoderBottom 属性</h3>
             <a href="file:///F:/Git/project0-sunhuanwei/index1.html">这是index1的连接</a>
              <a href="file:///F:/Git/project0-sunhuanwei/index2.html">这是index2的连接</a>
 
@@ -39,12 +77,13 @@
                <a href="https://sunhuanwei.github.io/project0-sunhuanwei/index3">这是index3的连接</a>
 
                <img src="https://www.runoob.com/images/logo.png" width="391" height="220">
-
-            <p>这是第一个段落</p>
-            <p>这是另一个段落</p>
+ 
+            <p id ="Border-bottom-double">这是第一个段落</p>
+            <p id ="border-bottom-width">这是另一个段落</p>
+            <pc class="text">这里用了media</p>
         </body>
 
-</html>
+
 
 </html>
 
